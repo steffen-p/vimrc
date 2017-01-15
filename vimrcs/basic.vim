@@ -65,6 +65,8 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" show command which is typed
+set showcmd
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -430,3 +432,6 @@ endfunction
 " if has("autocmd")
 "   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
+"
+" make vim find files recursively
+set path+=**
