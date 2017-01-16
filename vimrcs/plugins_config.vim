@@ -169,3 +169,9 @@ let g:gitgutter_enabled=0
 let g:gitgutter_map_keys = 0
 let g:gitgutter_highlight_lines = 1
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => VIM Hard Mode
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
