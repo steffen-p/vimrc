@@ -14,6 +14,9 @@ set showcmd
 " make vim find files recursively
 set path+=**
 
+" set line numbering
+set nu
+
 " By default Vim will only wait 1 second for each keystroke in a mapping.
 " You may find that too short with the above typemaps.  If so, you should
 " either turn off mapping timeouts via 'notimeout'.
